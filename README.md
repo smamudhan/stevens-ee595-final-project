@@ -1,17 +1,40 @@
-# Real vs AI Image Classifier
+# Detecting AI-Generated Images Using Machine Learning and Deep Learning Techniques
 
-This project is a deep learning-based binary classifier built with PyTorch. It aims to classify images into two categories (e.g., real and AI-generated) using a Convolutional Neural Network (CNN) model. The code is designed to train on a dataset organized in a specific folder structure and save the trained model for later use.
+In this repo, we present a study that uses machine learning techniques
+to classify between Real and AI-generated images. This is created as part
+of a graduate Applied ML class at Stevens Institute of Technology.
 
-## Requiements
+We implement and compare four models, by training them on two different datasets (outlined below): 
+ 1. Random Forest classifier,
+ 2. Support Vector Machine (SVM), 
+ 3. Vanilla Convolutional Neural Network (CNN)
+ 4. MobileNet CNN
+
+## Requirements
 - Python 3.6+
 - PyTorch
 - torchvision
 - scikit-learn
 - matplotlib
-- CUDA (optional for GPU support)
+- CUDA
+- cuml
+- numpy
+- numba
+- joblib
+- opencv-python
+- imbalanced-learn
+- pillow 
 
-## Key Functions
-load_data: Loads and preprocesses the dataset.
-CNNClassifier: Defines the CNN model architecture.
-train_classifier: Trains the model and evaluates performance on the validation set.
-plot_training_history: Plots the training and validation loss curves.
+## Authors
+- [Amudhan Manivasagam](https://github.com/smamudhan/)
+- [Sameer Rajendra](https://github.com/SameerRajendra/)
+- [Nikhil Krishna Bramhandam](https://github.com/Nikhil-wannabe/)
+
+## Dataset
+- [Full Dataset (Dataset 1)](https://www.kaggle.com/datasets/nikhil2k3/artifact-customcurated-extras)
+- [Reduced Dataset (Dataset 2)](https://www.kaggle.com/datasets/nikhil2k3/project-data)
+
+## Results
+The /output folder contains the final model weights of the python notebooks, trained models, any relevant graphs, and sometimes - intermediate files of extracted features from the dataset.
+
+The python files in the root folder are mostly identical to the notebooks; but were used to simplify training in a cloud environment (easier to run a script than setup jupyterlab)
